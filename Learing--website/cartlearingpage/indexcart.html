@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title> Cart page</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>  
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+      <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/learing/assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+	
+  </head>
+
+  <body>
+
+    
+    <header class="header" data-header>
+      <div class="container">
+  
+        <a href="#" class="logo">
+          <img src="/learing/assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+        </a>
+  
+        <nav class="navbar" data-navbar>
+  
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+            </a>
+  
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+  
+          </ul>
+  
+        </nav>
+  
+        <div class="header-actions">
+  
+         
+          
+  
+           
+  <a class="cart" href="javascript:void(0);" title="Your Cart">
+    <img src="./img/cart.png" />
+    <span id="count-item" data-count="0">0 item</span>
+  </a>
+          
+  
+          <a href="#" class="btn has-before">
+            <span class="span">Try for free</span>
+  
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+  
+          <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+  
+        </div>
+  
+        <div class="overlay" data-nav-toggler data-overlay></div>
+  
+      </div>
+    </header>
+  
+      
+ <main>
+  <section class="section-cart">
+     
+<figure class="snip">
+    <h4>Java Course</h4>
+    <div class="image">
+      <img class="slide1" src="./img/blog-1.jpg" />
+     
+    </div>
+   
+    <figcaption>
+      <p>Join our Java course to gain hands-on experience in Java development, learn industry best practices, and unlock opportunities in development.</p>    
+      <div class="price">
+        <s>$24.00</s><div class="real" data-price="19.00">$19.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+  
+  <figure class="snip">              
+    <h4>Python Course</h4>
+    <div class="image">
+      <img class="slide2" src="./img/blog-2.jpg" />
+     
+    </div>
+   
+    <figcaption>
+      <p>Embark on a comprehensive Python journey, from fundamentals to advanced concepts, empowering you to create powerful applications and solve real-world challenges</p>    
+      <div class="price">
+        <s>$29.00</s><div class="real" data-price="24.00">$24.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+  
+  <figure class="snip">
+    <h4>Data Science</h4>
+    <div class="image">
+      <img class="slide3" src="img/blog-3.jpg" />
+     
+    </div>
+   
+    <figcaption>
+      <p>Explore the art of extracting actionable insights from data and mastering the tools and techniques that drive informed decision-making in our comprehensive data science course.</p>    
+      <div class="price">
+        <s>$22.00</s><div class="real" data-price="14.55">$14.55</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+  
+  <figure class="snip">               
+    <h4>MERN stack</h4>
+    <div class="image">
+      <img class="slide4" src="./img/blog-1.jpg" />
+      
+    </div>
+    
+    <figcaption>
+      <p>Learn how to build dynamic web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and unleash the power of full-stack development.</p>    
+      <div class="price">
+        <s>$35.00</s><div class="real" data-price="26.00">$26.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+
+  </section>
+
+
+
+    <section class="section-checkout">
+  
+  <div class="checkout-container">
+    <div class="table">
+    <span class="empty">Your cart is empty!</span>
+
+    <div class="col1-name"></div>
+    <div class="col2-price"></div>
+    </div>
+    <div class="bin"><span>Clear All</span><img id="bin" src="./img/delete.png" style="width:40px" /></div>
+    <div class="total">
+      <div class="total-text">Total :</div>
+      <div class="total-amount">$ 0</div>
+    </div>
+    <div class="checkout" onclick="document.getElementById('id01').style.display='block'">Check out</div>
+    
+  </div>
+
+          <!-- -----------------Bill------------- -->
+ <div id="id01" class="modal">
+  <div class="wrapper">
+    <div class="bill-content">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    <h1 class="box-title">Checkout</h1>
+    <div class="price-total">
+      <span>PAY</span>
+      <div class="pay-last">$ 0</div>
+    </div>
+    <form>
+      
+      <div class="form-text">
+        <label>Card Number</label>
+        <input name="card-number" type="text" required>
+      </div>
+      <div class="form-text">
+        <label>Card Verification Value</label>
+        <input name="name" type="text" placeholder="CVV" required>
+      </div>
+      <div class="form-text" id="col01">
+        <label>Expiry Date</label>
+        <input name="card-number" type="text" placeholder="MM/YY" maxlength="3" required>
+      </div>
+      <div class="form-text"  id="col02">
+        <label>Coupon Code</label>
+        <input name="card-number" type="text">
+      </div>
+      
+    </form>
+      <button id="coupon">Get coupon code</button>
+      <a href="/order - learing/order.html"><button class="payment">pay Now</button>
+      </a>
+    </div>
+  </div>
+ </div> 
+</section>  
+   
+ </main>
+ 
+    
+
+
+
+
+
+<!-- 
+  - custom js link
+-->
+<script src="./assets/js/script.js" defer></script>
+
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+ <script  src="./js/script.js"></script>
+      
+  </body>
+</html>
